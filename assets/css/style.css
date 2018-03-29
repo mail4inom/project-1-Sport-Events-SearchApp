@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+}
+
+#full {
+    background-image: url('http://img.gawkerassets.com/img/18kbwkl2l4fetgif/ku-xlarge.gif');
+    height: 400px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#main-page-buttons {
+    margin: 0px 0px 0px 0px;
+    width: 120px;
+}
+
+#search-box { 
+    width:150px;
+    margin-top: 10px;
+    }
