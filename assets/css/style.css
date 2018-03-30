@@ -4,11 +4,11 @@ body{
     
     }
     #full{
-        background-image: url('../images/image3.jpeg');
+        background-image: url('../images/event2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         
-        height: 750px;
+        height: 500px;
         color: white;
         padding-left: 10px;
     }
