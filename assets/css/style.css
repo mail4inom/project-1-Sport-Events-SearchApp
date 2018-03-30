@@ -1,14 +1,15 @@
 body{
     height: 100%;
-    background-color: rgb(214, 235, 235);
+    background-color: rgb(229, 240, 240);
     
     }
+
     #full{
         background-image: url('../images/event2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         
-        height: 500px;
+        height: 550px;
         color: white;
         padding-left: 10px;
     }
@@ -19,7 +20,7 @@ body{
         font-weight: bold;
     }
     #search{
-        width: 100%;
+        width: 200px;
         height: 50px;
         font-size: 30px;
         text-align: center;
@@ -63,7 +64,7 @@ font-size: 70px;
 
     a {
         text-align: center;
-        color: red;
+        color: rgb(29, 86, 211);
         font-size: 25px;
     }
 
@@ -92,3 +93,26 @@ font-size: 70px;
         right: 0;
         opacity: 0; 
       }
+
+      #showEvents{
+          background-color: whitesmoke
+      }
+
+
+      @media screen and (max-width: 600px){
+      img {
+          width: 100%
+
+      }
+
+      .display-4{
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Holtwood One SC', serif;
+        font-size: 50px;
+            }
+        
+        #full{
+            height: 450px;
+        }
+    }

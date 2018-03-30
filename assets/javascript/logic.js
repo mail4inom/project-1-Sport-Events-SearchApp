@@ -32,23 +32,37 @@ $(document).ready(function () {
                 var img = response[i].performers[0].images.huge;
 
                 var title = $("<h2>").text(name);
-                var addresS = $("<h4>").text(address + " " + city + " " + country + ".");
-                var timE = $("<h4>").text("Time: " + time);
-                var avPrice = $("<h4>").text("Average price: " + aPrice + "$");
-                var hiPrice = $("<h4>").text("Highest price: " + hPrice + "$");
-                var loPrice = $("<h4>").text("Lowest price: " + lPrice + "$");
+                var addresS = $("<h4>").text(address + " " + city);
+                var timE = $("<h4>").text(time);
+                var avPrice = $("<h4>").text("Average price: $" + aPrice.toFixed(2));
+                var hiPrice = $("<h4>").text("Highest price: $" + hPrice);
+                var loPrice = $("<h4>").text("Lowest price: $" + lPrice);
                 var tickets = $("<a>");
-                tickets.attr("href", url);
-                tickets.text("Click here to purchase a ticket for this event!");
 
+                tickets.attr("href", url);
+                
+                tickets.text("Buy Ticket");
+                
+                var showEvents = $("<button>");
+
+                showEvents.append(tickets);
+
+                showEvents.attr("id", "showEvents");
+                
                 var image = $("<img>");
 
                 image.attr("src", img);
 
-                newDiv.append(title, addresS, timE, avPrice, hiPrice, loPrice, tickets, image);
+                newDiv.append(title, addresS, timE, avPrice, hiPrice, loPrice, showEvents, image);
                 $(".output").append(newDiv);
             }
+            
         });
-
+      
     });
+    // $('#myModal').on('shown.bs.modal', function () {
+    //     $('#myInput').trigger('focus')
+    //   })
+    
+    // }
 });
