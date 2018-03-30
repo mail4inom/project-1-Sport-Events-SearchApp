@@ -1,0 +1,41 @@
+body{
+    background-image: url("images/event.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+#brand{
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    
+}
+
+#sidebar{
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: rgb(216, 203, 203);
+    height: 300px;
+    border-radius: 0;
+}
+
+#sidebar2{
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: rgb(216, 203, 203);
+    height: 300px;
+    border-radius: 0;
+}
+
+#search{
+    margin-right: 200px;
+    width: 300px;
+}
+
+
+/* font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Arimo', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Varela Round', sans-serif; */
