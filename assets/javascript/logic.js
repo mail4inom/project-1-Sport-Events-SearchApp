@@ -18,6 +18,7 @@ $(document).ready(function () {
             for (var i = 0; i < response.length; i++) {
                 var newDiv = $("<div>");
                 newDiv.addClass("col-md-12");
+
                 var name = response[i].title;
                 var address = response[i].venue.address;
                 var city = response[i].venue.extended_address;
@@ -39,6 +40,7 @@ $(document).ready(function () {
                 var loPrice = $("<h4>").text("Lowest price: $" + lPrice);
                 var tickets = $("<a>");
 
+                newDiv.attr("id", "infoBox");
                 tickets.attr("href", url);
                 
                 tickets.text("Buy Ticket");

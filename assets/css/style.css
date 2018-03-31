@@ -1,15 +1,20 @@
 body{
-    height: 100%;
+    /* height: 100%; */
     background-color: rgb(229, 240, 240);
     
     }
 
+    /* #bgvid{
+        width: 100%;
+        height: 550px;
+    } */
     #full{
         background-image: url('../images/event2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        
+        width: 100%;
         height: 550px;
+        /* height: 550px; */
         color: white;
         padding-left: 10px;
     }
@@ -45,10 +50,10 @@ body{
     }
     
     .display-4{
-text-align: center;
-color: #ffffff;
-font-family: 'Holtwood One SC', serif;
-font-size: 70px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Holtwood One SC', serif;
+        font-size: 70px;
     }
     img {
         width: 250px;
@@ -83,7 +88,7 @@ font-size: 70px;
         color: rgb(245, 51, 51);
         text-align: center;
         font-family: 'Holtwood One SC', serif;
-        margin-top: 200px;
+        margin-top: 150px;
       }
       .ml4 .letters {
         position: absolute;
@@ -98,21 +103,56 @@ font-size: 70px;
           background-color: whitesmoke
       }
 
+      #infoBox{
+          padding-top: 20px;
+      }
+
 
       @media screen and (max-width: 600px){
       img {
-          width: 100%
-
+          width: 100%;
+          float: none;
+          display: block;
+   
       }
 
+      body{
+
+      }
       .display-4{
-        text-align: center;
+        /* text-align: center; */
         color: #ffffff;
         font-family: 'Holtwood One SC', serif;
-        font-size: 50px;
+        font-size: 20px;
+        /* display: flex; */
+        word-wrap: break-word;
             }
         
         #full{
-            height: 450px;
+            height: 420px;
+            width: 100%;
+            background-color: rgb(229, 240, 240)
+        }
+
+        .m14{
+            display: block;
+        }
+        .letters{
+            display: none;
+        }
+
+        #search{
+            width: 50%;
+        }
+
+        #input{
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 992px){
+
+        .m14{
+            font-size: 55px;
         }
     }
