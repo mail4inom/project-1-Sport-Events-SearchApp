@@ -1,0 +1,110 @@
+body{
+    height: 100%;
+    background-color: rgb(214, 235, 235);
+    
+    }
+    ul{
+        float: right;
+    }
+    
+    #full{
+        /* background-image: url('../images/image3.jpeg'); */
+        background: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        color: white;
+        padding-left: 10px;
+    }
+    #searchEvent{
+        color: rgb(245, 51, 51);
+        font-family: 'Holtwood One SC', serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #search{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+        color: #57636e;
+        font-family: 'Holtwood One SC', serif;
+        margin-bottom: 20px;
+    }
+    .jumbo{
+       background-color: white;
+       margin: 10px;
+    }
+    #search:hover{
+        cursor: pointer;
+        background-color: rgb(245, 51, 51);
+        color: #fff;
+    }
+    #search:focus{
+        outline: 0;
+    }
+    
+    #homepage{
+        border-radius: 10px;
+        width: 300px;
+    }
+    
+    .display-4{
+text-align: center;
+color: #ffffff;
+font-family: 'Holtwood One SC', serif;
+font-size: 50px;
+    }
+    img {
+        width: 80%;
+        height: 230px;
+       
+        float: right;
+    }
+
+    h4 {
+        color: #57636e;
+        font-size: 16px;
+    }
+
+    h2 {
+        color: blue;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #showEvents{
+        width: 100px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 3px;
+    color: #57636e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+    #showEvents:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    
+}
+#showEvents:focus{
+    outline: 0;
+}
+    .ml4 {
+        position: relative;
+        font-weight: 900;
+        font-size: 40px;
+        color: rgb(245, 51, 51);
+        text-align: center;
+        font-family: 'Holtwood One SC', serif;
+        margin-top: 200px;
+      }
+      .ml4 .letters {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0.3em;
+        right: 0;
+        opacity: 0; 
+      }
