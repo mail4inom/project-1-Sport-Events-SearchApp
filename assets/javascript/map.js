@@ -27,7 +27,7 @@ function initMap() {
       service.nearbySearch({
         location: myLocation, //Uses geolocation to find the following
         radius: 10000,
-        types: ['stadium']
+        types: ['restaurant', 'cafe', 'bakery']
       }, callback);
     })
   };
