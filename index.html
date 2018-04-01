@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,55 +18,80 @@
 
 <body>
 
-        
-                
-    <div id="full" class="jumbotron jumbotron-fluid">
-        <div class="container-fluid">
-             
-                        <!-- <video autoplay muted id="bgvid"> -->
-                            <!-- <source src="assets/images/soccerwall.mp4" type="video/mp4"> -->
-                        
-            <h1 class="display-4">Where do you want to be?</h1>
-            <div class="row">
-                <div class="col-md-5"></div>
-                <div class="col-md-2">
-                    <h1 class="ml4">
-                        <span class="letters letters-1">Search...</span>
-                        <span class="letters letters-2">Find&#128161;</span>
-                        <span class="letters letters-3">Go!</span>
-                    </h1>
-                </div>
-                <div class="col-md-5"></div>
-            </div>
-        <!-- </video> -->
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <form>
-                    <div class="text-center">
-                        <!-- <h1 id="searchEvent">Search An Event</h1> -->
-                        <input class="form-control" type="text" id="input" placeholder="Performer, Artist, Game, Event">
-                        <br>
-                        <button id="search" type="submit" value="Get Started">search</button>
+
+    <div id="page1">
+        <div id="full" class="jumbotron jumbotron-fluid">
+            <div class="container-fluid">
+
+                <h1 class="display-4">Where do you want to be?</h1>
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-2">
+                        <h1 class="ml4">
+                            <span class="letters letters-1">Search...</span>
+                            <span class="letters letters-2">Find&#128161;</span>
+                            <span class="letters letters-3">Go!</span>
+                        </h1>
                     </div>
-                </form>
+                    <div class="col-md-5"></div>
+                </div>
+
             </div>
-            <div class="col-md-4"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="text-center">
+                          
+                            <input class="input form-control" type="text" placeholder="Performer, Artist, Game, Event">
+                            <br>
+                            <button class="search" type="submit" value="Get Started">search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </div>
+    
+    <div id="page2">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a id="brand" class="navbar-brand navbar-fixed href="index.html"">Navbar</a>
+    
+                    <div class="collapse navbar-collapse">
+                        <form class="form-inline my-1 mx-auto">
+                            <div class="md-form form-sm mt-0">
+                                <input class="input form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search" aria-label="Search">
+                            </div>
+                            <button class="search" class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
+                        </form>
+                        <div class="navbar navbar-right">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index3.html">Lucky</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index3.html">Food</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="output"></div>
-            </div>
+        <div class="output">
+
         </div>
     </div>
 
-    
     <script src="assets/javascript/aniamte.js"></script>
     <script src="assets/javascript/logic.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>

@@ -8,33 +8,49 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo|Muli|Roboto+Slab|Source+Sans+Pro|Varela+Round" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css"  href="style2.css">
+    <link rel="stylesheet" type="text/css"  href="assets/css/style2.css">
     <title></title>
 </head>
 <body>
         
-    <nav class="navbar navbar-dark default-color">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a id="brand" class="navbar-brand justify-content-between mx-auto" href="#">Navbar</a>
-            <form class="form-inline my-1">
-                <div class="md-form form-sm mt-0">
-                    <input  id="search" class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search" aria-label="Search">
-                </div>
-                <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
-            </form>
+            <a id="brand" class="navbar-brand navbar-fixed" href="index.html">Navbar</a>
+
+        <div class="collapse navbar-collapse">
+                <form class="form-inline my-1 mx-auto">
+                        <div class="md-form form-sm mt-0">
+                            <input  id="input" class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                        <button id="search" class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
+                    </form>
+        <div class="navbar navbar-right">
+            <ul class="navbar-nav mr-auto">
+                <li class= "nav-item">
+                    <a class="nav-link" href="index3.html">Lucky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index3.html">Food</a>
+                </li>
+            </ul> 
+        </div>
+            
+    </div>
+            
         </div>
     </nav>
-
-    <div id="myModal "class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  
+    <div id="myModal "class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">This is what we found</h5>
+                    <h5 class="modal-title" id="modalTitle">This is what we found</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div id="modalResults" class="modal-body">
                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatum necessitatibus alias blanditiis aliquid temporibus dolorum harum corrupti suscipit ipsa. Ea ut consequatur ratione vitae saepe quia earum inventore atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facilis ea culpa aliquam, velit pariatur, modi maiores repellat voluptatibus sunt quia! Vel harum possimus voluptatum, quae voluptatibus corrupti dolores ex.
                 </div>
                 <div class="modal-footer">
@@ -44,7 +60,7 @@
             </div>
         </div>
     
-    <div class="row justify-content-end">
+    <!-- <div class="row justify-content-end">
         <div id="sidebar" class="card card-body col-md-3">
         <h4 class="card-text">Placeholder for Jquery</h4>
         
@@ -65,8 +81,15 @@
             <a class="card-link">Another link</a>
         </div>
     </div>
-</div>
+</div> -->
 
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="output"></div>
+            </div>
+        </div>
+    </div>
 
   
         
@@ -76,6 +99,7 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-    <script src="api.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </body>
 </html>

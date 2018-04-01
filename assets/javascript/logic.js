@@ -1,12 +1,15 @@
 
 $(document).ready(function () {
-    $("#search").on("click", function (event) {
+    $(".search").bind("click", function (event) {
+
         $(".output").empty();
         event.preventDefault();
-        var searchInput = $("#input").val().trim();
+        var searchInput = $(".input").val().trim();
         if (searchInput === "") {
             return;
         }
+      
+
         var queryURL = "https://api.seatgeek.com/2/events?geoip=true&performers.slug&q=" + searchInput + "&client_id=MTEwMzI0MzR8MTUyMjMzNDkxMy42MQ";
         $.ajax({
             url: queryURL,
@@ -17,7 +20,9 @@ $(document).ready(function () {
 
             for (var i = 0; i < response.length; i++) {
                 var newDiv = $("<div>");
-                newDiv.addClass("col-md-12");
+                // newDiv.addClass("row");
+                // newDiv.addClass("col-md-12");
+                
 
                 var name = response[i].title;
                 var address = response[i].venue.address;
@@ -32,15 +37,21 @@ $(document).ready(function () {
 
                 var img = response[i].performers[0].images.huge;
 
-                var title = $("<h2>").text(name);
-                var addresS = $("<h4>").text(address + " " + city);
-                var timE = $("<h4>").text(time);
-                var avPrice = $("<h4>").text("Average price: $" + aPrice.toFixed(2));
-                var hiPrice = $("<h4>").text("Highest price: $" + hPrice);
-                var loPrice = $("<h4>").text("Lowest price: $" + lPrice);
+                var title = $("<h2>").html(name);
+                var addresS = $("<h4>").html(address + " " + city);
+                var timE = $("<h4>").html(time);
+                var avPrice = $("<h4>").html("Average price: $" + aPrice.toFixed(2));
+                var hiPrice = $("<h4>").html("Highest price: $" + hPrice);
+                var loPrice = $("<h4>").html("Lowest price: $" + lPrice);
                 var tickets = $("<a>");
 
+            
+                // $("#page1").css("display", "none");
+
+                // $("#page2").css("display", "block");
+            
                 newDiv.attr("id", "infoBox");
+
                 tickets.attr("href", url);
                 
                 tickets.text("Buy Ticket");
@@ -56,15 +67,19 @@ $(document).ready(function () {
                 image.attr("src", img);
 
                 newDiv.append(title, addresS, timE, avPrice, hiPrice, loPrice, showEvents, image);
+
                 $(".output").append(newDiv);
+
+                newWindow();
             }
-            
+        
         });
-      
-    });
-    // $('#myModal').on('shown.bs.modal', function () {
-    //     $('#myInput').trigger('focus')
-    //   })
+        function newWindow(){
+            var myWindow = window.open("index2.html", "_self");
     
-    // }
-});
+            myWindow.document.write(function(response));
+    
+    };
+    }
+);
+})
