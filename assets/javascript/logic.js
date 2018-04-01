@@ -45,10 +45,11 @@ $(document).ready(function () {
 
                 image.attr("src", img);
 
-                newDiv.append(title, addresS, timE, avPrice, hiPrice, loPrice, tickets, image);
+                newDiv.append(title, addresS, timE, avPrice, hiPrice, loPrice, tickets, image,);
                 $(".output").append(newDiv);
             }
         });
 
     });
 });
+
