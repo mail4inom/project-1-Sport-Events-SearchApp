@@ -15,11 +15,11 @@ function initMap() {
         center: myLocation,
         zoom: 10
       });
-      infoWindow = new google.maps.InfoWindow({
+      infowindow = new google.maps.InfoWindow({
         map: map
       });
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Ready for some Sport Fun!!!');
+      infowindow.setPosition(pos);
+      infowindow.setContent('You are here!');
       map.setCenter(pos);
       var myLocation = pos; //Sets variable to geo location long and lat co-ordinates.
 
@@ -49,10 +49,12 @@ function createMarker(place) {
   var marker = new google.maps.Marker({
     map: map,
     position: place.geometry.location
+
+    
   });
 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent(place.name);
+    infowindow.setContent("<div><strong>" + place.name + "</strong><br>" + placeLoc + "</div>");
     infowindow.open(map, this);
   });
 }
