@@ -24,7 +24,7 @@ $(document).ready(function () {
 
                 var divRow = $("<div>").addClass("row  jumbo");
                 var newDiv = $("<div>").addClass("col-md-6 col-xs-6");
-                var newDivImg = $("<div>").addClass("col-md-6 col-xs-6 text-center");
+                var newDivImg = $("<div>").addClass("col-md-6 col-xs-6");
 
 
                 var name = response[i].title;
@@ -52,28 +52,34 @@ $(document).ready(function () {
                     img = "assets/images/image5.jpeg";
                 }
 
-                var title = $("<h2>").text(name);
-                var addresS = $("<h4>").text(address + " " + city + " " + country + ".");
-                var timE = $("<h4>").text(time);
-                var placE = $("<h4>").text(place);
+                var title = $("<p>").text(name);
+                title.addClass("eventName")
+                var addresS = $("<p>").text(address + " " + city + " " + country + ".");
+                var timE = $("<p>").text(time);
+                var placE = $("<p>").text(place);
+                placE.addClass("place");
 
-                var avPrice = $("<h4>").text("Average price: " + "$" + aPrice);
-                var hiPrice = $("<h4>").text("Highest price: " + "$" + hPrice);
-                var loPrice = $("<h4>").text("Lowest price: " + "$" + lPrice);
+                var avPrice = $("<p>").text("Average price: " + "$" + aPrice);
+                var hiPrice = $("<p>").text("Highest price: " + "$" + hPrice);
+                var loPrice = $("<p>").text("Lowest price: " + "$" + lPrice);
 
-                var tickets = $("<a>");
-                tickets.attr("href", url);
-                tickets.text("Buy Ticket");
-                var showEvents = $("<button>");
-                showEvents.append(tickets);
-                showEvents.attr("id", "showEvents");
+                var tickets = $("<p>");
+                var showEvents = $("<a>");
+                showEvents.addClass("btn btn-primary button")
+                showEvents.attr("href", url);
+                showEvents.text("Buy Ticket");
+
+                tickets.append(showEvents);
+
+                tickets.attr("id", "showEvents");
 
                 var image = $("<img>");
+                image.addClass("apiImage")
                 image.attr("src", img);
 
-                newDiv.append(title, placE, addresS, timE, avPrice, hiPrice, loPrice, showEvents);
-                newDivImg.append(image);
-                divRow.append(newDiv, newDivImg);
+                newDiv.append(placE, addresS, timE, avPrice, hiPrice, loPrice, tickets);
+                newDivImg.append(title, image);
+                divRow.append(newDivImg, newDiv);
                 $(".output").append(divRow);
 
             }
