@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $(".title").hide();
+    $(".alert").hide();
     $("#search").on("click", function (event) {
         $(".black").css("background-color", "white")
         $(".hide").hide();
@@ -7,12 +8,28 @@ $(document).ready(function () {
         $(".output").show();
         $(".output").empty();
         event.preventDefault();
+        var postalCode = "postal_code";
+        var geolocation = "geoip=true";
         var searchInput = $("#input").val().trim();
+        var zipCode = $("#zipCode").val().trim();
+        $("#zipCode").val(" ");
         $("#input").val(" ");
-        if (searchInput === "") {
+        if (searchInput === "" ) {
+           
+            $(".hide").show();
+           $(".title").hide();
             return;
         }
-        var queryURL = "https://api.seatgeek.com/2/events?geoip=true&&range=100mi&q=" + searchInput + "&client_id=MTEwMzI0MzR8MTUyMjMzNDkxMy42MQ";
+        if (zipCode === ""){
+
+            $(".alert").show();
+           $(".hide").show();
+           $(".title").hide();
+           zipCode = geolocation;
+        }else{
+            $(".alert").hide();
+        }
+        var queryURL = "https://api.seatgeek.com/2/events?postal_code="+zipCode+"&range=100mi&q=" + searchInput + "&client_id=MTEwMzI0MzR8MTUyMjMzNDkxMy42MQ";
         $.ajax({
             url: queryURL,
             method: "GET"
