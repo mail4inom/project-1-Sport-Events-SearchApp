@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
-    <style>
-        img {
-            width: 150px;
-            height: 150px;
-        }
-    </style>
+    <title>Restaurants</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <form id="form">
-        <h3>Search An Event</h3>
-        <div class="input-group">
-            <input type="text" class="form-control" id="event" placeholder="Search">
-            <br><br>
-
-            <input type="submit" id="submitSearch">
-            <div class="input-group-btn">
-            </div>
-        </div>
-    </form>
-
-
-    <div class="output"></div>
-
+    <button id="getRestaurants">Get Restaurants Nearby!</button>
+    <div id="routput"></div>
     <script src="map.js"></script>
-       
-   
 </body>
-
 </html>
