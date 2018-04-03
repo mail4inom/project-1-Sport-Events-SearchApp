@@ -1,21 +1,185 @@
-body, html {
+body{
     height: 100%;
-}
-
-#full {
-    background-image: url('http://img.gawkerassets.com/img/18kbwkl2l4fetgif/ku-xlarge.gif');
-    height: 400px; 
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-#main-page-buttons {
-    margin: 0px 0px 0px 0px;
-    width: 120px;
-}
-
-#search-box { 
-    width:150px;
-    margin-top: 10px;
+    background: black;
+     
     }
+
+    #full{
+        background: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        color: white;
+        padding-left: 10px;
+        border-radius: 20px;
+        background: url("https://www.wallpaperflare.com/static/218/981/269/cam-newton-carolina-panthers-american-football-football-wallpaper.jpg");
+        border-style: solid;
+        border-color: #007bff;
+    
+
+    }
+    #searchEvent{
+        color: rgb(245, 51, 51);
+        font-family: 'Holtwood One SC', serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #search{
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 10px;
+        color: #57636e;
+        font-family: 'Holtwood One SC', serif;
+        margin-bottom: 20px;
+    }
+    
+    #search:hover{
+        cursor: pointer;
+        background-color: rgb(245, 51, 51);
+        color: #fff;
+    }
+    #search:focus{
+        outline: 0;
+    }
+    .jumbo{
+        background-color: white;
+        margin: 10px;
+        border: 2px solid lightgray;
+        border-radius: 20px;
+     }
+    #homepage{
+        border-radius: 10px;
+        width: 300px;
+    }
+    .place{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .team{
+        color: black;
+        font-weight: bold;
+    }
+    
+    .display-4{
+       text-align: center;
+       color: #ffffff;
+       font-family: 'Holtwood One SC', serif;
+       font-size: 40px;
+    }
+    .apiImage {
+        width: 300px;
+        height: 230px;
+       border-radius: 20px;
+        /* float: right; */
+    }
+   .center{
+       text-align: center;
+       /* border-radius: 50%!important; */
+   }
+   .fab{
+       font-size: 30px;
+       margin: 10px;
+   }
+
+    p{
+        color: #57636e;
+        font-size: 16px;
+    }
+
+    .eventName {
+        color: blue;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .header{
+        height: 80px;
+    }
+    .icons{
+        margin-top: -25px;
+        margin-left: 40px;
+    }
+    #hr{
+       border-bottom: 0.1px solid black;
+    }
+   
+    .ml4 {
+        position: relative;
+        font-weight: 900;
+        font-size: 35px;
+        color: rgb(245, 51, 51);
+        text-align: center;
+        font-family: 'Holtwood One SC', serif;
+        margin-top: 200px;
+      }
+      .ml4 .letters {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 0.3em;
+        right: 0;
+        opacity: 0; 
+      }
+      #dropdownMenuButton {
+          background-color: #2b2c2d;
+          border-width: 0px;
+      }
+
+      #food1 {
+        font-size:36px;
+      }
+      #foodbtn {
+        color: white;
+        font-size: 45px; 
+        margin-right: 50px; 
+        margin-left: 30px;
+        margin-top: 2px;
+      }
+      #teambtn {
+        color: white;
+        font-size: 40px;
+       
+      }
+      #sportsbtn {
+          margin-top: 15px;
+          margin-left: 15px;
+          margin-right: 0px;
+          font-size: 30px;
+      }
+      #musicbtn {
+        margin-top: 12px;
+        margin-left: 0px;
+        margin-right: 15px;
+        font-size: 30px;
+        color: white;
+      }
+      #eventbtn {
+          color: white;
+          font-size: 30px;
+          margin-top: 12px;
+          margin-left: 35px;
+      }
+     #brand-img {
+        width: 92px;
+        height: 80px;
+     }
+     #main-nav-bar {
+         background: #2b2c2d;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-style: solid;
+        border-color: #007bff;
+     }
+     .footer {
+       
+       background-color: #2b2c2d;
+       color: white;
+       text-align: center;
+       height: 100px;
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+       border-style: solid;
+       border-color: #007bff;
+       margin: 0;
+     }
