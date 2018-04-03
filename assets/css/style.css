@@ -1,6 +1,6 @@
 body{
     height: 100%;
-    background: black;
+    background: white;
      
     }
 
@@ -13,7 +13,9 @@ body{
         padding-left: 10px;
         border-radius: 20px;
         background: url("https://www.wallpaperflare.com/static/218/981/269/cam-newton-carolina-panthers-american-football-football-wallpaper.jpg");
+        background-repeat: no-repeat;
         border-style: solid;
+        border-width: 2px;
         border-color: #007bff;
     
 
@@ -139,7 +141,6 @@ body{
       #teambtn {
         color: white;
         font-size: 40px;
-       
       }
       #sportsbtn {
           margin-top: 15px;
@@ -169,7 +170,6 @@ body{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-style: solid;
-        border-color: #007bff;
      }
      .footer {
        
@@ -183,3 +183,4 @@ body{
        border-color: #007bff;
        margin: 0;
      }
+     
