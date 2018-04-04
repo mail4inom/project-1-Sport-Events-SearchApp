@@ -1,15 +1,18 @@
+
+
 $(document).ready(function () {
+    var response;
+        var gifResult;
     $(".title").hide();
     $(".alert").hide();
     $("#search").on("click", function (event) {
-        $(".black").css("background-color", "white")
+        
         $(".hide").hide();
         $(".title").show();
         $(".output").show();
         $(".output").empty();
         event.preventDefault();
-        var postalCode = "postal_code";
-        var geolocation = "geoip=true";
+        
         var searchInput = $("#input").val().trim();
         var zipCode = $("#zipCode").val().trim();
         $("#zipCode").val(" ");
@@ -25,7 +28,7 @@ $(document).ready(function () {
             $(".alert").show();
            $(".hide").show();
            $(".title").hide();
-           zipCode = geolocation;
+           
         }else{
             $(".alert").hide();
         }
@@ -35,7 +38,15 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
-            var response = response.events;
+             response = response.events;
+
+            var gifURL = "https://api.giphy.com/v1/gifs/search?q=" + searchInput + "&api_key=8gTAnRtd6rOl1UFJ17AYYmzMBV2rK2fv"
+            $.ajax({
+                url: gifURL,
+                method: "GET"
+            }).then(function (gifResponse) {
+                console.log(gifResponse);
+                gifResult = gifResponse.data;
 
             for (var i = 0; i < response.length; i++) {
 
@@ -45,7 +56,7 @@ $(document).ready(function () {
 
 
                 var name = response[i].title;
-
+ 
                 var address = response[i].venue.address;
                 var city = response[i].venue.extended_address;
                 var country = response[i].venue.country;
@@ -62,12 +73,8 @@ $(document).ready(function () {
                 aPrice = aPrice.toFixed(2);
                 hPrice = hPrice.toFixed(2);
                 lPrice = lPrice.toFixed(2);
-
-                var img = response[i].performers[0].images.huge;
-
-                if (img === undefined) {
-                    img = "assets/images/image5.jpeg";
-                }
+                var img = gifResult[i].images.fixed_height.url;
+               
 
                 var title = $("<p>").text(name);
                 title.addClass("eventName")
@@ -98,10 +105,9 @@ $(document).ready(function () {
                 newDivImg.append(title, image);
                 divRow.append(newDivImg, newDiv);
                 $(".output").append(divRow);
-
             }
         });
-
+    });
     });
 
 });

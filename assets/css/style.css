@@ -116,3 +116,43 @@ body{
         opacity: 0; 
       }
       
+      .title{
+          display: none;
+      }
+      
+      @media screen and (max-width:414px){
+        .display-4{
+         font-size: 18px;
+        }
+        #full{
+            height: 400px;
+        }
+      }
+    
+     
+      #searchEvent, #search{
+          font-size: 15px;
+      }
+      .eventy{
+          width: 50px;
+          height: 30px;
+      }
+      
+      @media screen and (max-width:360px){
+        .display-4{
+            font-size: 18px;
+           }
+           #full{
+            height: 400px;
+        }
+       
+          #searchEvent, #search{
+            font-size: 15px;
+        }
+        .eventy{
+            width: 50px;
+            height: 30px;
+        }
+       
+      }
+      
