@@ -1,3 +1,5 @@
-# project-1-weedApp
+# Eventy App
 
-Read me coming soon!
+## Find an upcoming sports game located near you!
+
+## HTML/CSS/Javascript/Jquery/API calls
